@@ -1,11 +1,5 @@
-type GensenReponse = {
-  gensen: number;
-  shiharai: number;
-}
+import hoshu from './hoshu';
 
-export default function gensen(kingaku: number) : GensenReponse {
-  return {
-    gensen: 100,
-    shiharai: 2000
-  };
-}
+export default {
+  hoshu
+};

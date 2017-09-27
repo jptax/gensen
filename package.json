@@ -6,9 +6,10 @@
   "repository": "ssh://git@github.com/jptax/gensen.git",
   "author": "mugi-uno <mugi.uno@gmail.com>",
   "license": "MIT",
+  "types": "types/type.d.ts",
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
-    "test": "tsc && ava build/**/*.test.js"
+    "build": "tsc",
+    "test": "tsc -p tsconfig.test.json && ava build/**/*.test.js"
   },
   "devDependencies": {
     "ava": "^0.22.0",
