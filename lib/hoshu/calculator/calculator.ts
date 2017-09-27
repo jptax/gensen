@@ -1,5 +1,7 @@
 import standard from './standard';
+import genkouKouen from './genkou-kouen';
 
-export default function (kingaku: number) : GensenReponse {
-  return standard(kingaku);
+export default {
+  standard,
+  genkouKouen
 }
