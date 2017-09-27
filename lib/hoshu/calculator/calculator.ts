@@ -1,7 +1,7 @@
-import standard from './standard';
+import tedori from './tedori';
 import genkouKouen from './genkou-kouen';
 
 export default {
-  standard,
+  tedori,
   genkouKouen
 }
