@@ -91,3 +91,4 @@ typings/
 .env
 
 dist/
+build/
