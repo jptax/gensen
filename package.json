@@ -7,8 +7,8 @@
   "author": "mugi-uno <mugi.uno@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc lib/index.ts --outDir dist/",
-    "test": "tsc --outDir build/ && ava build/**/*.test.js"
+    "build": "tsc -p tsconfig.build.json",
+    "test": "tsc && ava build/**/*.test.js"
   },
   "devDependencies": {
     "ava": "^0.22.0",
