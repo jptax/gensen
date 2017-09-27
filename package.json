@@ -9,7 +9,7 @@
   "types": "types/type.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "tsc -p tsconfig.test.json && ava build/**/**/*.test.js"
+    "test": "tsc -p tsconfig.test.json && ava"
   },
   "devDependencies": {
     "ava": "^0.22.0",
@@ -17,5 +17,11 @@
   },
   "dependencies": {
     "bignumber.js": "^4.1.0"
+  },
+  "ava": {
+    "files": [
+      "build/**/*.test.js"
+    ],
+    "verbose": true
   }
 }
