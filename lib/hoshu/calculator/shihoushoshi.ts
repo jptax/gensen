@@ -1,6 +1,11 @@
-export default function (kingaku: number) : GensenReponse {
+import BN, {BigNumber} from 'bignumber.js'
+
+export default function (originKingaku: number) : GensenReponse {
+  let kingaku = new BigNumber(originKingaku);
+  let gensen = kingaku.minus(10000).times(0.1021).floor().toNumber();
+
   return {
-    gensen: 100,
-    shiharai: 2000
+    gensen: gensen,
+    shiharai: originKingaku
   };
 }
