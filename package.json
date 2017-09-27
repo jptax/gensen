@@ -9,7 +9,7 @@
   "types": "types/type.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "tsc -p tsconfig.test.json && ava build/**/*.test.js"
+    "test": "tsc -p tsconfig.test.json && ava build/**/**/*.test.js"
   },
   "devDependencies": {
     "ava": "^0.22.0",
