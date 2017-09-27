@@ -27,3 +27,9 @@ test('小数点以下切り捨て', (t) => {
   t.is(r.gensen, 4084);
   t.is(r.shiharai, 50001);
 });
+
+test('100万円を超える場合も、10.21%で計算される', (t) => {
+  const r:GensenReponse = gensen(1000001);
+  t.is(r.gensen, 101079);
+  t.is(r.shiharai, 1000001);
+});
