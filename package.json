@@ -6,6 +6,9 @@
   "repository": "ssh://git@github.com/jptax/gensen.git",
   "author": "mugi-uno <mugi.uno@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc lib/index.ts --outDir dist/"
+  },
   "devDependencies": {
     "typescript": "^2.5.3"
   }
