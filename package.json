@@ -14,5 +14,8 @@
   "devDependencies": {
     "ava": "^0.22.0",
     "typescript": "^2.5.3"
+  },
+  "dependencies": {
+    "bignumber.js": "^4.1.0"
   }
 }
