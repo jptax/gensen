@@ -8,7 +8,7 @@
   "license": "MIT",
   "types": "types/type.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "webpack -p",
     "test": "rm -dr ./build; tsc -p tsconfig.test.json && ava",
     "lint": "tslint -c tslint.json 'test/**/**/*.ts' 'lib/**/**/*.ts' ",
     "lint:fix": "tslint -c tslint.json --fix 'test/**/**/*.ts' 'lib/**/**/*.ts' ",
@@ -20,9 +20,11 @@
     "ava": "^0.22.0",
     "coveralls": "^2.13.2",
     "nyc": "^11.2.1",
+    "ts-loader": "^2.3.7",
     "tslint": "^5.7.0",
     "typedoc": "^0.8.0",
-    "typescript": "^2.5.3"
+    "typescript": "^2.5.3",
+    "webpack": "^3.6.0"
   },
   "dependencies": {
     "bignumber.js": "^4.1.0"
