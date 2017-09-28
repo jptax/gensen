@@ -11,7 +11,7 @@ export default function (originZeinuki:number) : Kingaku {
     const zeikomi:BN = zeinuki.dividedBy(0.8979).floor();
 
     return {
-      zei: zeinuki.times(0.1021).floor().toNumber(),
+      zei: zeikomi.times(0.1021).floor().toNumber(),
       zeinuki: zeinuki.toNumber(),
       zeikomi: zeikomi.toNumber()
     };
