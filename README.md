@@ -7,11 +7,21 @@
 ## 説明
 [国税庁の資料](https://www.nta.go.jp/shiraberu/ippanjoho/pamph/gensen/shikata2017/01.htm)を元にした実装になっています。
 
-## 使い方
+## 導入方法
 
 ```
 npm install --save gensen
 ```
+
+```js
+import gensen from "gensen";
+
+const gensenTyoshu = gensen.houshu(100000).zei;
+```
+
+## 使い方
+
+### 報酬・料金などの源泉徴収の計算を行いたい場合
 
 ```js
 import gensen from "gensen";
@@ -25,28 +35,28 @@ gensen.houshu.gaikouin(200000);
 // => { zei: 8168, zeikomi: 200000, zeinuki: 191832 }
 ```
 
-### 馬主に支払われる競馬の賞金
+#### 馬主に支払われる競馬の賞金
 `gensen.houshu.banushi`
 
-### 外交員、集金人、電力量計の検針人の業務に関する報酬・料金
+#### 外交員、集金人、電力量計の検針人の業務に関する報酬・料金
 `gensen.houshu.gaikouin`
 
-### バー・キャバレー等のホステス、バンケットホステス・コンパニオン等の業務に関する報酬・料金
+#### バー・キャバレー等のホステス、バンケットホステス・コンパニオン等の業務に関する報酬・料金
 `gensen.houshu.hostess`
 
-### 事業の広告宣伝のための賞金
+#### 事業の広告宣伝のための賞金
 `gensen.houshu.koukokuShoukin`
 
-### プロボクサーの業務に関する報酬・料金
+#### プロボクサーの業務に関する報酬・料金
 `gensen.houshu.proBoxer`
 
-### 司法書士、土地家屋調査士、海事代理士の業務に関する報酬・料金
+#### 司法書士、土地家屋調査士、海事代理士の業務に関する報酬・料金
 `gensen.houshu.shihoushoshi`
 
-### 社会保険診療報酬支払基金が支払う診療報酬
+#### 社会保険診療報酬支払基金が支払う診療報酬
 `gensen.houshu.shinryou`
 
-### 手取契約の場合の源泉徴収税額の計算[^1]
+#### 手取契約の場合の源泉徴収税額の計算[^1]
 `gensen.houshu.tedori`
 
 [^1]: http://www.nta.go.jp/taxanswer/gensen/2792_qa.htm
