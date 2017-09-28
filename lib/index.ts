@@ -1,5 +1,5 @@
-import hoshu from './hoshu';
+import hoshu from "./hoshu";
 
 export default {
-  hoshu
+  hoshu,
 };

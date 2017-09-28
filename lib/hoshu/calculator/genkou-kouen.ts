@@ -6,15 +6,15 @@ import BN from "bignumber.js";
 // 源泉徴収をしなくてもよいことになっています。
 const GENKO_KOUEN_MENZEI_KINGAKU = 50000;
 
-export default function (originKingaku: number) : Kingaku {
+export default function(originKingaku: number): Kingaku {
   const kingaku = new BN(originKingaku);
   let zei: number = 0;
   let zeinuki: number = 0;
   const zeikomi = originKingaku;
 
-  if(kingaku.lte(GENKO_KOUEN_MENZEI_KINGAKU)) {
+  if (kingaku.lte(GENKO_KOUEN_MENZEI_KINGAKU)) {
     zei = 0;
-  } else if(kingaku.lte(1000000)) {
+  } else if (kingaku.lte(1000000)) {
     zei = kingaku.times(0.1021).floor().toNumber();
   } else {
     zei = kingaku.minus(1000000).times(0.2042).add(102100).floor().toNumber();
@@ -24,7 +24,7 @@ export default function (originKingaku: number) : Kingaku {
 
   return {
     zei,
+    zeikomi,
     zeinuki,
-    zeikomi
   };
 }

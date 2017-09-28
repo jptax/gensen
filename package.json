@@ -9,10 +9,13 @@
   "types": "types/type.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "tsc -p tsconfig.test.json && ava"
+    "test": "tsc -p tsconfig.test.json && ava",
+    "lint": "tslint -c tslint.json 'test/**/**/*.ts' 'lib/**/**/*.ts' ",
+    "lint:fix": "tslint -c tslint.json --fix 'test/**/**/*.ts' 'lib/**/**/*.ts' "
   },
   "devDependencies": {
     "ava": "^0.22.0",
+    "tslint": "^5.7.0",
     "typescript": "^2.5.3"
   },
   "dependencies": {
