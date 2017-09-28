@@ -1,3 +1,4 @@
+import banushi from "./banushi";
 import bengoshiZeirishi from "./bengoshi-zeirishi";
 import gaikouin from "./gaikouin";
 import genkouKouen from "./genkou-kouen";
@@ -8,6 +9,7 @@ import shihoushoshi from "./shihoushoshi";
 import tedori from "./tedori";
 
 export default {
+  banushi,
   bengoshiZeirishi,
   gaikouin,
   genkouKouen,
