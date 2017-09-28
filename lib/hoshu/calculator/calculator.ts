@@ -6,6 +6,7 @@ import hostess from "./hostess";
 import koukokuSyoukin from "./koukoku-syoukin";
 import senzokuKeiyakukin from "./senzoku-keiyakukin";
 import shihoushoshi from "./shihoushoshi";
+import shinryou from "./shinryou";
 import tedori from "./tedori";
 
 export default {
@@ -17,5 +18,6 @@ export default {
   koukokuSyoukin,
   senzokuKeiyakukin,
   shihoushoshi,
+  shinryou,
   tedori,
 };
