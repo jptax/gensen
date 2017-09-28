@@ -47,3 +47,4 @@ jobs:
 
       - store_artifacts:
           path: ~/repo/docs
+          destination: docs
