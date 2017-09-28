@@ -11,7 +11,7 @@ export module houshu {
   export const gaikouin = calculator.gaikouin;
   export const genkouKouen = calculator.genkouKouen;
   export const hostess = calculator.hostess;
-  export const koukokuSyoukin = calculator.koukokuSyoukin;
+  export const koukokuShoukin = calculator.koukokuShoukin;
   export const proBoxer = calculator.proBoxer;
   export const senzokuKeiyakukin = calculator.senzokuKeiyakukin;
   export const shihoushoshi = calculator.shihoushoshi;
