@@ -1,2 +1,2 @@
-import calculator from "./calculator";
-export default calculator;
+import houshu from "./houshu";
+export default houshu;

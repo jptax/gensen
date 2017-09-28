@@ -8,6 +8,7 @@ import proBoxer from "./pro-boxer";
 import senzokuKeiyakukin from "./senzoku-keiyakukin";
 import shihoushoshi from "./shihoushoshi";
 import shinryou from "./shinryou";
+import standard from "./standard";
 import tedori from "./tedori";
 
 export default {
@@ -21,5 +22,6 @@ export default {
   senzokuKeiyakukin,
   shihoushoshi,
   shinryou,
+  standard,
   tedori,
 };
