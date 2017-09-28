@@ -14,7 +14,12 @@ export default function(originZeikomi: number, originKyuyo: number = 0): Kingaku
     koujo = new BN(0);
   }
 
-  const zei = zeikomi.minus(koujo).times(0.1021).floor();
+  let zei = zeikomi.minus(koujo);
+  if (zei.lessThan(0)) {
+    zei = new BN(0);
+  } else {
+    zei = zei.times(0.1021).floor();
+  }
 
   return {
     zei: zei.toNumber(),

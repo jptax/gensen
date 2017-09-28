@@ -14,6 +14,42 @@ test("報酬・料金を20万円支払う場合（控除フル適用）", (t) =>
     });
 });
 
+test("控除を引くと報酬が0円になる場合", (t) => {
+  t.deepEqual(
+    gensen.hoshu.gaikouin(120000),
+    {
+      zei: 0,
+      zeikomi: 120000,
+      zeinuki: 120000,
+    });
+
+  t.deepEqual(
+    gensen.hoshu.gaikouin(70000, 50000),
+    {
+      zei: 0,
+      zeikomi: 70000,
+      zeinuki: 70000,
+    });
+});
+
+test("控除を引くとマイナスになる場合", (t) => {
+  t.deepEqual(
+    gensen.hoshu.gaikouin(119999),
+    {
+      zei: 0,
+      zeikomi: 119999,
+      zeinuki: 119999,
+    });
+
+  t.deepEqual(
+    gensen.hoshu.gaikouin( 69999, 50000),
+    {
+      zei: 0,
+      zeikomi: 69999,
+      zeinuki: 69999,
+    });
+});
+
 test("報酬・料金20万円と給与5万円を支払う場合（控除から給与分引かれる）", (t) => {
   t.deepEqual(
     gensen.hoshu.gaikouin(200000, 50000),
