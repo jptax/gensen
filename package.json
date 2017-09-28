@@ -12,10 +12,12 @@
     "test": "rm -dr ./build; tsc -p tsconfig.test.json && ava",
     "lint": "tslint -c tslint.json 'test/**/**/*.ts' 'lib/**/**/*.ts' ",
     "lint:fix": "tslint -c tslint.json --fix 'test/**/**/*.ts' 'lib/**/**/*.ts' ",
-    "coverage": "nyc yarn test"
+    "coverage": "nyc yarn test",
+    "coverage:send": "yarn run coverage && nyc report --reporter=text-lcov | coveralls"
   },
   "devDependencies": {
     "ava": "^0.22.0",
+    "coveralls": "^2.13.2",
     "nyc": "^11.2.1",
     "tslint": "^5.7.0",
     "typescript": "^2.5.3"
