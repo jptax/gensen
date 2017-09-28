@@ -7,13 +7,10 @@ export function houshu(originZeikomi: number): Kingaku {
 /* tslint:disable */
 export module houshu {
   export const banushi = calculator.banushi;
-  export const bengoshiZeirishi = calculator.bengoshiZeirishi;
   export const gaikouin = calculator.gaikouin;
-  export const genkouKouen = calculator.genkouKouen;
   export const hostess = calculator.hostess;
   export const koukokuShoukin = calculator.koukokuShoukin;
   export const proBoxer = calculator.proBoxer;
-  export const senzokuKeiyakukin = calculator.senzokuKeiyakukin;
   export const shihoushoshi = calculator.shihoushoshi;
   export const shinryou = calculator.shinryou;
   export const standard = calculator.standard;
