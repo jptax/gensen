@@ -6,7 +6,7 @@ import gensen from "../../../lib/index";
 
 test("賞金が50万以下の場合は源泉徴収しない", (t) => {
   t.deepEqual(
-    gensen.houshu.koukokuSyoukin(10000),
+    gensen.houshu.koukokuShoukin(10000),
     {
       zei: 0,
       zeikomi: 10000,
@@ -16,7 +16,7 @@ test("賞金が50万以下の場合は源泉徴収しない", (t) => {
 
 test("賞金が50万以下の場合は源泉徴収しない（50万ちょうど）", (t) => {
   t.deepEqual(
-    gensen.houshu.koukokuSyoukin(500000),
+    gensen.houshu.koukokuShoukin(500000),
     {
       zei: 0,
       zeikomi: 500000,
@@ -26,7 +26,7 @@ test("賞金が50万以下の場合は源泉徴収しない（50万ちょうど�
 
 test("賞金が500001円の場合は50万を差引いて源泉徴収する（ただし税金が0円になる）", (t) => {
   t.deepEqual(
-    gensen.houshu.koukokuSyoukin(500001),
+    gensen.houshu.koukokuShoukin(500001),
     {
       zei: 0,
       zeikomi: 500001,
@@ -36,7 +36,7 @@ test("賞金が500001円の場合は50万を差引いて源泉徴収する（た
 
 test("賞金が500001円の場合は50万を差引いて源泉徴収する（税金が1円以上）", (t) => {
   t.deepEqual(
-    gensen.houshu.koukokuSyoukin(500010),
+    gensen.houshu.koukokuShoukin(500010),
     {
       zei: 1,
       zeikomi: 500010,
