@@ -1,5 +1,5 @@
 import test from "ava";
-import senzokuKeiyakukin from "../../../lib/hoshu/calculator/senzoku-keiyakukin";
+import senzokuKeiyakukin from "../../../lib/houshu/calculator/senzoku-keiyakukin";
 
 test("1,000,000以下の場合", (t) => {
   t.deepEqual(senzokuKeiyakukin(100000), { zei: 10210, zeinuki: 89790, zeikomi: 100000 });

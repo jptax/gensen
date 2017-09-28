@@ -1,5 +1,5 @@
 import test from "ava";
-import tedori from "../../../lib/hoshu/calculator/tedori";
+import tedori from "../../../lib/houshu/calculator/tedori";
 
 // https://www.nta.go.jp/taxanswer/gensen/2792_qa.htm
 test("税率が10.21％の場合（手取額が897,900円以下の場合)", (t) => {

@@ -1,5 +1,5 @@
 import test from "ava";
-import standard from "../../../lib/hoshu/calculator/standard";
+import standard from "../../../lib/houshu/calculator/standard";
 
 test("1,000,000以下の場合", (t) => {
   t.deepEqual(standard(100000), { zei: 10210, zeinuki: 89790, zeikomi: 100000 });

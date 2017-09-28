@@ -7,7 +7,7 @@ import gensen from "../../../lib/index";
 
 test("賞金100万の場合", (t) => {
   t.deepEqual(
-    gensen.hoshu.banushi(1000000),
+    gensen.houshu.banushi(1000000),
     {
       zei: 20420,
       zeikomi: 1000000,
@@ -17,7 +17,7 @@ test("賞金100万の場合", (t) => {
 
 test("賞金7500013円の場合（税金が1円になる下限）", (t) => {
   t.deepEqual(
-    gensen.hoshu.banushi(750013),
+    gensen.houshu.banushi(750013),
     {
       zei: 1,
       zeikomi: 750013,
@@ -27,7 +27,7 @@ test("賞金7500013円の場合（税金が1円になる下限）", (t) => {
 
 test("賞金75万円の場合（0になる境界値）", (t) => {
   t.deepEqual(
-    gensen.hoshu.banushi(750000),
+    gensen.houshu.banushi(750000),
     {
       zei: 0,
       zeikomi: 750000,
@@ -37,7 +37,7 @@ test("賞金75万円の場合（0になる境界値）", (t) => {
 
 test("賞金749999円（0になる境界値未満）", (t) => {
   t.deepEqual(
-    gensen.hoshu.banushi(749999),
+    gensen.houshu.banushi(749999),
     {
       zei: 0,
       zeikomi: 749999,
