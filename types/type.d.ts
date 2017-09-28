@@ -1,4 +1,5 @@
-type GensenReponse = {
-  gensen: number;
-  shiharai: number;
+type Kingaku = {
+  zei: number,
+  zeikomi: number,
+  zeinuki: number
 }
