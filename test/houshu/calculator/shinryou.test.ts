@@ -6,7 +6,7 @@ import gensen from "../../../lib/index";
 
 test("20万円を引いた時にマイナスであれば源泉徴収は0とする", (t) => {
   t.deepEqual(
-    gensen.hoshu.shinryou(199999),
+    gensen.houshu.shinryou(199999),
     {
       zei: 0,
       zeikomi: 199999,
@@ -16,7 +16,7 @@ test("20万円を引いた時にマイナスであれば源泉徴収は0とす�
 
 test("20万円ちょうどの場合", (t) => {
   t.deepEqual(
-    gensen.hoshu.shinryou(200000),
+    gensen.houshu.shinryou(200000),
     {
       zei: 0,
       zeikomi: 200000,
@@ -26,7 +26,7 @@ test("20万円ちょうどの場合", (t) => {
 
 test("小数点以下切り捨て", (t) => {
   t.deepEqual(
-    gensen.hoshu.shinryou(300001),
+    gensen.houshu.shinryou(300001),
     {
       zei: 10210,
       zeikomi: 300001,
@@ -35,7 +35,7 @@ test("小数点以下切り捨て", (t) => {
 });
 
 test("100万円を超える場合も、10.21%で計算される", (t) => {
-  t.deepEqual(gensen.hoshu.shinryou(2000000),
+  t.deepEqual(gensen.houshu.shinryou(2000000),
     {
       zei: 183780,
       zeikomi: 2000000,

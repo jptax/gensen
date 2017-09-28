@@ -1,5 +1,5 @@
 import test from "ava";
-import proBoxer from "../../../lib/hoshu/calculator/pro-boxer";
+import proBoxer from "../../../lib/houshu/calculator/pro-boxer";
 
 // プロボクサーの業務に関する報酬・料金
 // http://www.nta.go.jp/shiraberu/ippanjoho/pamph/gensen/shikata2017/pdf/09.pdf

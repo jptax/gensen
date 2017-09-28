@@ -1,5 +1,5 @@
 import test from "ava";
-import hostess from "../../../lib/hoshu/calculator/hostess";
+import hostess from "../../../lib/houshu/calculator/hostess";
 
 test("国税局のサンプル例", (t) => {
   t.deepEqual(hostess(750000, 31), { zei: 60749, zeinuki: 689251, zeikomi: 750000 });

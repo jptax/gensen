@@ -1,5 +1,5 @@
 import test from "ava";
-import bengoshiZeirishi from "../../../lib/hoshu/calculator/bengoshi-zeirishi";
+import bengoshiZeirishi from "../../../lib/houshu/calculator/bengoshi-zeirishi";
 
 test("1,000,000以下の場合", (t) => {
   t.deepEqual(bengoshiZeirishi(100000), { zei: 10210, zeinuki: 89790, zeikomi: 100000 });
