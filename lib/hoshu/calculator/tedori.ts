@@ -3,7 +3,7 @@ import BN from 'bignumber.js';
 const TEDORI_NIDANKAI_ZEIRITSU_KINGAKU = 897900;
 
 // 手取契約の場合の源泉徴収税額の計算
-export default function (tedori:number) : GensenReponse {
+export default function (tedori:number) : Kingaku {
   const t : BN = new BN(tedori);
 
   if (t.lte(TEDORI_NIDANKAI_ZEIRITSU_KINGAKU)) {

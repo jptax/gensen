@@ -1,7 +1,7 @@
 // https://www.nta.go.jp/taxanswer/gensen/2795.htm
 import BN from "bignumber.js";
 
-export default function (originKingaku: number) : GensenReponse {
+export default function (originKingaku: number) : Kingaku {
   const kingaku = new BN(originKingaku);
   let gensen: number = 0;
   let shiharai: number = 0;

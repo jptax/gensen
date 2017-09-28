@@ -1,6 +1,6 @@
 import BN  from 'bignumber.js'
 
-export default function (originKingaku: number) : GensenReponse {
+export default function (originKingaku: number) : Kingaku {
   let kingaku = new BN(originKingaku);
   let gensen = kingaku.minus(10000).times(0.1021).floor().toNumber();
 
