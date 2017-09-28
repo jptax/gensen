@@ -1,6 +1,6 @@
 {
   "name": "gensen",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "日本の源泉徴収税計算用ライブラリです",
   "main": "index.js",
   "repository": "ssh://git@github.com/jptax/gensen.git",
