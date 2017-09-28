@@ -1,8 +1,15 @@
 import BN from "bignumber.js";
 
+/** 二段階税率の適用の判定基準額 */
 const TEDORI_NIDANKAI_ZEIRITSU_KINGAKU = 897900;
 
-// 手取契約の場合の源泉徴収税額の計算
+/**
+ * 手取契約の場合の源泉徴収税額の計算
+ * http://www.nta.go.jp/taxanswer/gensen/2792_qa.htm
+ *
+ * @param originZeinuki 手取り額
+ * @return 計算結果額
+ */
 export default function(originZeinuki: number): Kingaku {
   const zeinuki: BN = new BN(originZeinuki);
 
