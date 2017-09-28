@@ -33,7 +33,18 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run: yarn lint
-      - run: yarn coverage:send
+      - run:
+          name: Lint
+          command: yarn lint
 
+      - run:
+          name: Test & Coverage
+          command: yarn coverage:send
 
+      - run:
+          name: Generate docs
+          command: yarn docs
+
+      - store_artifacts:
+          path: ~/repo/docs
+          destination: docs
