@@ -1,10 +1,9 @@
-import tedori from './tedori';
-import shihoushoshi from './shihoushoshi';
-import genkouKouen from './genkou-kouen';
-
+import genkouKouen from "./genkou-kouen";
+import shihoushoshi from "./shihoushoshi";
+import tedori from "./tedori";
 
 export default {
-  tedori,
+  genkouKouen,
   shihoushoshi,
-  genkouKouen
-}
+  tedori,
+};
