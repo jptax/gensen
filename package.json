@@ -14,7 +14,8 @@
     "lint:fix": "tslint -c tslint.json --fix 'test/**/**/*.ts' 'lib/**/**/*.ts' ",
     "coverage": "nyc yarn test",
     "coverage:send": "yarn run coverage && nyc report --reporter=text-lcov | coveralls",
-    "docs": "typedoc lib/ --out docs/"
+    "docs": "typedoc lib/ --out docs/",
+    "preversion": "npm run docs && git add docs && git commit -m \"update documents\""
   },
   "devDependencies": {
     "ava": "^0.22.0",
