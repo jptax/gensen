@@ -9,6 +9,20 @@
 
 ## 導入方法
 
+### ブラウザ
+
+- [bignumber.js](https://github.com/MikeMcl/bignumber.js/)が必要です。
+
+```html
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bignumber.js/4.1.0/bignumber.js'></script>
+<script src='dist/gensen.js'></script>
+<script>
+  alert(gensen.houshu(100000).zei);
+</script>
+```
+
+### node.js
+
 ```
 npm install --save gensen
 ```
