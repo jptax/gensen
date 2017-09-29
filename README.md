@@ -74,3 +74,8 @@ gensen.houshu.gaikouin(200000);
 `gensen.houshu.tedori`
 
 [^1]: http://www.nta.go.jp/taxanswer/gensen/2792_qa.htm
+
+## リンク
+
+- APIドキュメント - https://jptax.github.io/gensen/api/
+- デモページ - https://jptax.github.io/gensen/demo/
