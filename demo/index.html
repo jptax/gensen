@@ -1,0 +1,194 @@
+<!document html>
+<html>
+<head>
+  <title>jptax - gensen demos</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+<body>
+  <div class='container'>
+    <div class='row'>
+      <div class='col'>
+        <h1>jptax/gensen demos</h1>
+      </div>
+    </div>
+    <hr />
+    
+    <form>
+      <div class='area'>
+        <h4>報酬・料金などの源泉徴収額</h4>
+        <div>
+          支払金額 <input class='input' type='text' />
+        </div>
+        <div>
+          源泉徴収額:<span class='zei'></span>
+        </div>
+        <div>
+          税込金額:<span class='zeikomi'></span>
+        </div>
+        <div>
+          税抜金額:<span class='zeinuki'></span>
+        </div>
+      </div>
+    </form>
+
+    <form>
+      <div class='area'>
+        <h4>馬主に支払われる競馬の賞金</h4>
+        <div>
+          支払金額 <input class='input' type='text' method='banushi' />
+        </div>
+        <div>
+          源泉徴収額:<span class='zei'></span>
+        </div>
+        <div>
+          税込金額:<span class='zeikomi'></span>
+        </div>
+        <div>
+          税抜金額:<span class='zeinuki'></span>
+        </div>
+      </div>
+    </form>
+
+    <form>
+      <div class='area'>
+        <h4>外交員、集金人、電力量計の検針人の業務に関する報酬・料金</h4>
+        <div>
+          支払金額 <input class='input shiharai' type='text' method='gaikouin' />
+        </div>
+        <div>
+          給与 <input class='input kyuyo' type='text' method='gaikouin' />
+        </div>
+        <div>
+          源泉徴収額:<span class='zei'></span>
+        </div>
+        <div>
+          税込金額:<span class='zeikomi'></span>
+        </div>
+        <div>
+          税抜金額:<span class='zeinuki'></span>
+        </div>
+      </div>
+    </form>
+
+    <form>
+      <div class='area'>
+        <h4>バー・キャバレー等のホステス、バンケットホステス・コンパニオン等の業務に関する報酬・料金</h4>
+        <div>
+          支払金額 <input class='input shiharai' type='text' method='hostess' />
+        </div>
+        <div>
+          日数 <input class='input nissu' type='text' method='hostess' />
+        </div>
+        <div>
+          源泉徴収額:<span class='zei'></span>
+        </div>
+        <div>
+          税込金額:<span class='zeikomi'></span>
+        </div>
+        <div>
+          税抜金額:<span class='zeinuki'></span>
+        </div>
+      </div>
+    </form>
+
+    <form>
+      <div class='area'>
+        <h4>事業の広告宣伝のための賞金</h4>
+        <div>
+          支払金額 <input class='input' type='text' method='koukokuShoukin' />
+        </div>
+        <div>
+          源泉徴収額:<span class='zei'></span>
+        </div>
+        <div>
+          税込金額:<span class='zeikomi'></span>
+        </div>
+        <div>
+          税抜金額:<span class='zeinuki'></span>
+        </div>
+      </div>
+    </form>
+
+    <form>
+      <div class='area'>
+        <h4>プロボクサーの業務に関する報酬・料金</h4>
+        <div>
+          支払金額 <input class='input' type='text' method='proBoxer' />
+        </div>
+        <div>
+          源泉徴収額:<span class='zei'></span>
+        </div>
+        <div>
+          税込金額:<span class='zeikomi'></span>
+        </div>
+        <div>
+          税抜金額:<span class='zeinuki'></span>
+        </div>
+      </div>
+    </form>
+
+    <form>
+      <div class='area'>
+        <h4>司法書士、土地家屋調査士、海事代理士の業務に関する報酬・料金</h4>
+        <div>
+          支払金額 <input class='input' type='text' method='shihoushoshi' />
+        </div>
+        <div>
+          源泉徴収額:<span class='zei'></span>
+        </div>
+        <div>
+          税込金額:<span class='zeikomi'></span>
+        </div>
+        <div>
+          税抜金額:<span class='zeinuki'></span>
+        </div>
+      </div>
+    </form>
+
+    <form>
+      <div class='area'>
+        <h4>社会保険診療報酬支払基金が支払う診療報酬</h4>
+        <div>
+          支払金額 <input class='input' type='text' method='shinryou' />
+        </div>
+        <div>
+          源泉徴収額:<span class='zei'></span>
+        </div>
+        <div>
+          税込金額:<span class='zeikomi'></span>
+        </div>
+        <div>
+          税抜金額:<span class='zeinuki'></span>
+        </div>
+      </div>
+    </form>
+
+    <form>
+      <div class='area'>
+        <h4>手取契約の場合の源泉徴収税額の計算</h4>
+        <div>
+          手取額 <input class='input' type='text' method='tedori' />
+        </div>
+        <div>
+          源泉徴収額:<span class='zei'></span>
+        </div>
+        <div>
+          税込金額:<span class='zeikomi'></span>
+        </div>
+        <div>
+          税抜金額:<span class='zeinuki'></span>
+        </div>
+      </div>
+    </form>
+
+
+
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bignumber.js/4.1.0/bignumber.js'></script>
+  <script src='../dist/gensen.js'></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script src='./demo.js'></script>  
+</body>
+</html>
