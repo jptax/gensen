@@ -2,7 +2,7 @@ import test from "ava";
 import proBoxer from "../../../lib/houshu/calculator/pro-boxer";
 
 // プロボクサーの業務に関する報酬・料金
-// http://www.nta.go.jp/shiraberu/ippanjoho/pamph/gensen/shikata2017/pdf/09.pdf
+// https://www.nta.go.jp/publication/pamph/gensen/shikata2017/pdf/09.pdf
 
 test("50,000以下の場合", (t) => {
   t.deepEqual(proBoxer(30000), { zei: 0, zeinuki: 30000, zeikomi: 30000 });

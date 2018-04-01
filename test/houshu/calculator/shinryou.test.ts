@@ -2,7 +2,7 @@ import test from "ava";
 import gensen from "../../../lib/index";
 
 // 社会保険診療報酬支払基金が支払う診療報酬
-// http://www.nta.go.jp/shiraberu/ippanjoho/pamph/gensen/shikata2017/pdf/09.pdf
+// https://www.nta.go.jp/publication/pamph/gensen/shikata2017/pdf/09.pdf
 
 test("20万円を引いた時にマイナスであれば源泉徴収は0とする", (t) => {
   t.deepEqual(
