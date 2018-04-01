@@ -5,7 +5,7 @@ const SHINRYOU_KOUJO: number = 200000;
 
 /**
  * 社会保険診療報酬支払基金が支払う診療報酬
- * http://www.nta.go.jp/shiraberu/ippanjoho/pamph/gensen/shikata2017/pdf/09.pdf
+ * https://www.nta.go.jp/publication/pamph/gensen/shikata2017/pdf/09.pdf
  * @param originZeikomi 支払金額
  */
 export default function(originZeikomi: number): Kingaku {

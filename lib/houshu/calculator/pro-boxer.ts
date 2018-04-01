@@ -1,7 +1,7 @@
 import BN from "bignumber.js";
 
 // プロボクサーの業務に関する報酬・料金
-// http://www.nta.go.jp/shiraberu/ippanjoho/pamph/gensen/shikata2017/pdf/09.pdf
+// https://www.nta.go.jp/publication/pamph/gensen/shikata2017/pdf/09.pdf
 
 const BOXER_KOUJO_KINGAKU = 50000;
 

@@ -5,7 +5,7 @@
 `gensen` は日本の源泉徴収税計算用のライブラリです。
 
 ## 説明
-[国税庁の資料](https://www.nta.go.jp/shiraberu/ippanjoho/pamph/gensen/shikata2017/01.htm)を元にした実装になっています。
+[国税庁の資料](https://www.nta.go.jp/publication/pamph/gensen/shikata2017/01.htm)を元にした実装になっています。
 
 ## 導入方法
 
